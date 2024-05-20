@@ -1,0 +1,97 @@
+@font-face {
+    font-family: MiFuente;
+    src: url(../src/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+:root{
+    --color-rosa-claro: #EAC39C;
+    --color-azul: #927C72;
+    --color-naranja: #D76D34;
+    --color-marron: #2D1D1A;
+    --color-rojo: #733727;
+}
+
+
+body{
+    background-color: var(--Color-De-Fondo);
+    margin: 0;
+    width: 80vw;
+    margin-left: 10vw;
+    padding-right: 10vw;
+}   
+  header{
+    display: flex;
+    background-color: var(--Color-De-Fondo);
+    width: auto;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
+  }
+  #logoSection{
+    display: flex;
+    width: 20vw;
+    align-items: center;
+  }
+  #logoPalomitas{
+    width: 25%;
+  }
+  #cineMagicLogo{
+    margin-left: 2vw;
+    height: 5vh;
+  }
+  #HeaderNav{
+    width: 70vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  #BotonInicioSesion{
+    margin-left: 2vw;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    border: 0.15rem solid black;
+  }
+  #HeaderNav hr{
+      height: 2vh ;
+      background-color:var(--Color-UI) ;
+      border: 0.1rem solid var(--Color-UI);
+      margin: 1vw;
+      border-radius: 2rem ;
+    }
+    main{
+        margin-top: 10vh;
+    }
+    main section{
+        width: 35vw;
+
+    }
+    main h1{
+        color: var(--Color-Secundario);
+        font-style: italic;
+        font-size: 3rem;
+        
+    }
+    main h5{
+        margin-bottom: 20vh;
+    }
+    #resalte{
+        font-weight: bold;
+        color: var(--Color-UI);
+    }
+    #cienPeliculas{
+        display: flex;
+        align-items: center;
+    }
+    #cienPeliculas img{
+        margin-right: 1vw;
+        width: fit-content;
+        width: 7vw;
+        height: 5vh;
+    }
+    #cienPeliculas p{
+        
+        text-align: justify;
+    }
