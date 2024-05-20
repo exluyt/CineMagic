@@ -15,48 +15,62 @@ body{
     margin-left: 10vw;
     padding-right: 10vw;
 }   
-  header{
-    display: flex;
-    background-color: var(--Color-De-Fondo);
-    width: auto;
-    height: 15vh;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
+nav {
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  align-items: center;
+}
 
-  }
-  #logoSection{
-    display: flex;
-    width: 20vw;
-    align-items: center;
-  }
-  #logoPalomitas{
-    width: 25%;
-  }
-  #cineMagicLogo{
-    margin-left: 2vw;
-    height: 5vh;
-  }
-  #HeaderNav{
-    width: 70vw;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
+#icono {
+  gap: 30px;
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+}
 
-  #BotonInicioSesion{
-    margin-left: 2vw;
-    padding: 0.8rem;
-    border-radius: 1rem;
-    border: 0.15rem solid black;
-  }
-  #HeaderNav hr{
-      height: 2vh ;
-      background-color:var(--Color-UI) ;
-      border: 0.1rem solid var(--Color-UI);
-      margin: 1vw;
-      border-radius: 2rem ;
-    }
+#select-idioma {
+  border: none;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  background-color: #EAC39C;
+  padding-left: 0px;
+}
+
+
+#select-idioma option {
+  background-color: #EAC39C;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+#idiomas {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+#barraVertical {
+  margin-left: 5px;
+  font-size: 15px;
+  color: #D76D34;
+}
+
+#enlace {
+  display: flexbox;
+  margin-left: 20px;
+  font-size: 11px;
+  border: solid 1px black;
+  border-radius: 10px;
+  padding: 5px;
+  color: black;
+  text-decoration: none;
+}
+
+#enlace:hover{
+  background-color: rgba(229, 229, 229, 0.4);
+}
     main{
         margin-top: 10vh;
     }
