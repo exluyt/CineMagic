@@ -124,12 +124,6 @@ display: none;
   transform: translateX(100%) rotate(-270deg);
 }
 
-.general {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--Color-De-Fondo);
-}
 
 .cuadro-centrado {
   width: -webkit-fill-available;
