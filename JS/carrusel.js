@@ -9,29 +9,36 @@ let thumbnailItems = thumbnail.querySelectorAll('.item')
 thumbnail.appendChild(thumbnailItems[0])
 
 // Function for next button 
-nextBtn.onclick = function() {
+nextBtn.onclick = function () {
     moveSlider('next')
 }
 
 // Function for prev button 
-prevBtn.onclick = function() {
+prevBtn.onclick = function () {
     moveSlider('prev')
 }
 
 // Event listener for keyboard arrow keys
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keydown', function (event) {
     if (event.key === 'ArrowRight') {
         moveSlider('next')
     } else if (event.key === 'ArrowLeft') {
         moveSlider('prev')
     }
 })
-
+window.addEventListener('scroll', function() {
+    var nav = document.querySelector('nav');
+    if (window.scrollY > 0) {
+        nav.classList.add('shrink');
+    } else {
+        nav.classList.remove('shrink');
+    }
+});
 function moveSlider(direction) {
     let sliderItems = sliderList.querySelectorAll('.item')
     let thumbnailItems = document.querySelectorAll('.thumbnail .item')
-    
-    if(direction === 'next'){
+
+    if (direction === 'next') {
         sliderList.appendChild(sliderItems[0])
         thumbnail.appendChild(thumbnailItems[0])
         slider.classList.add('next')
@@ -42,11 +49,11 @@ function moveSlider(direction) {
     }
 
 
-    slider.addEventListener('animationend', function() {
-        if(direction === 'next'){
+    slider.addEventListener('animationend', function () {
+        if (direction === 'next') {
             slider.classList.remove('next')
         } else {
             slider.classList.remove('prev')
         }
-    }, {once: true}) // Remove the event listener after it's triggered once
+    }, { once: true }) // Remove the event listener after it's triggered once
 }

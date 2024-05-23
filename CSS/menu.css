@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+    font-family: MiFuente;
+    src: url(../src/PlusJakartaSans-VariableFont_wght.ttf);
+}
 
 :root {
     --color-rosa-claro: #EAC39C;
@@ -11,43 +14,100 @@
 body {
     margin: 0;
     background-color: var(--color-rosa-claro);
-    font-family: Poppins;
+    font-family: MiFuente;
     font-size: 12px;
 }
 
-a {
-    text-decoration: none;
-}
+#select-idioma {
+    border-color: #EAC39C !important;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: var(--color-rosa-claro)!important;
+  }
+  
+  #select-idioma option {
+    background-color: var(--color-rosa-claro)!important;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
 
-header {
-    width: 1140px;
-    max-width: 80%;
-    margin: auto;
-    height: 50px;
+/* nav section  */
+nav {
     display: flex;
     align-items: center;
-    position: relative;
-    z-index: 100;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1000;
+    background-color: var(--color-rosa-claro);
+    padding-left: 3vw;
+    padding-right: 3vw;
+    transition: padding 0.6s ease;
+    box-sizing: border-box;
 }
 
-header a {
-    color: #eee;
-    margin-right: 5px;
-    padding: 5px 10px;
-    transition: 0.2s;
+nav.shrink {
+    padding-left: 8.3vw;
+    padding-right: 8.3vw;
 }
-
-a.active {
-    background: #14ff72cb;
-    border-radius: 2px;
-}
-
-header a:hover {
-    background: #14ff72cb;
-    border-radius: 2px;
-}
-
-
+  
+  #icono {
+    gap: 30px;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+  }
+  
+  #select-idioma {
+    border: none;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: var(--color-rosa-claro);
+    padding-left: 0px;
+    font-family: MiFuente;
+  }
+  
+  
+  #select-idioma option {
+    background-color: var(--color-rosa-claro);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  #idiomas {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  #barraVertical {
+    margin-left: 5px;
+    font-size: 15px;
+    color: var(--color-naranja);
+  }
+  
+  .enlace {
+    display: flexbox;
+    margin-left: 20px;
+    font-size: 11px;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 5px;
+    width: max-content;
+    color: black;
+    text-decoration: none;
+    font-family: MiFuente;
+  }
+  .enlace p{
+    width: max-content;
+  }
+  
+  #enlace:hover{
+    background-color: rgba(229, 229, 229, 0.4);
+  }
+  
 /* slider section  */
 
 .slider {
@@ -86,6 +146,11 @@ header a:hover {
 
 .description {
     color: white;
+    width: 80%;
+    text-shadow: 2px 2px 1px #000F;
+}
+.title {
+    text-shadow: 4px 4px 1px #000F;
 }
 
 .slider .list .item .content .title,
@@ -127,10 +192,6 @@ header a:hover {
     border: 1px solid #fff;
     color: #eee;
 }
-
-
-
-
 
 /* Thumbnail Section  */
 .thumbnail {
@@ -333,13 +394,8 @@ header a:hover {
         opacity: 0;
     }
 }
-
-@media screen and (max-width: 678px) {
-    .slider .list .item .content {
-        padding-right: 0;
-    }
-
-    .slider .list .item .content .title {
-        font-size: 50px;
-    }
+#wrapper {
+    margin: 0;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
