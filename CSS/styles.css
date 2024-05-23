@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
 
-:root{
-    --Color-De-Fondo:#EAC39C;
-    --Color-UI: #D76D34;
-    --Color-Secundario:#733727; 
+:root {
+  --color-rosa-claro: #EAC39C;
+  --color-azul: #927C72;
+  --color-naranja: #D76D34;
+  --color-marron: #2D1D1A;
+  --color-rojo: #733727;
 }
 body{
   display: flex;
@@ -11,8 +13,8 @@ body{
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
 	line-height: 1.7;
-	color: var(--Color-Secundario);
-	background-color: var(--Color-De-Fondo);
+	color: var(--color-rojo);
+	background-color: var(--color-rosa-claro);
   width: 80vw;
   margin-left: 10vw;
   margin-right: 10vw;
@@ -31,14 +33,14 @@ nav {
 }
 
 #select-idioma {
-  border-color: #EAC39C;
+  border-color: var(--color-rosa-claro);
   font-family: Arial, sans-serif;
   font-size: 14px;
-  background-color: #EAC39C;
+  background-color: var(--color-rosa-claro);
 }
 
 #select-idioma option {
-  background-color: #EAC39C;
+  background-color: var(--color-rosa-claro);
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
@@ -87,7 +89,7 @@ display: none;
   border-radius: 8px;
   padding: 0;
   margin: 10px auto;
-  background-color: var(--Color-UI);
+  background-color: var(--color-naranja);
   cursor: pointer;
 }
 
@@ -103,7 +105,7 @@ display: none;
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  color: var(--Color-UI);
+  color: var(--color-naranja);
   background-color: #020305;
   font-family: 'unicons';
   content: '\eb4f';
@@ -230,13 +232,13 @@ display: none;
   letter-spacing: 1px;
   display: inline-flex;
   align-items: center;
-  background-color: var(--Color-UI);
+  background-color: var(--color-naranja);
   color: #000000;
 }
 
 .boton:hover{  
   background-color: #000000;
-  color: var(--Color-UI);
+  color: var(--color-naranja);
   box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
 }
 
@@ -245,10 +247,10 @@ a:hover {
 }
 
 .link {
-  color: var(--Color-Secundario);
+  color: var(--color-rojo);
 }
 
 .link:hover {
   text-decoration: underline;
-  color: var(--Color-Secundario);
+  color: var(--color-rojo);
 }
