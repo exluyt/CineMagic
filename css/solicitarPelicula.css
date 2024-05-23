@@ -1,0 +1,35 @@
+:root{
+    --color-rosa-claro: #EAC39C;
+    --color-azul: #927C72;
+    --color-naranja: #D76D34;
+    --color-marron: #2D1D1A;
+    --color-rojo: #733727;  
+}
+
+#subContenedor{
+    box-shadow: -0.3rem 0.2rem 0.5rem var(--color-rojo);
+    background-color:var(--color-marron) ;
+    color: white;
+    width: 50%;
+    margin-left: 20%;
+    border-radius: 1rem;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-bottom: 5vh;
+
+}
+#subContenedor h1{
+    padding-top: 2vh;
+    text-shadow:  -0.2rem 0.2rem 0.1rem var(--color-azul);
+}
+form{
+    display: grid;
+    
+}
+form input{
+    width: 30vw;
+    background-color: ;
+}
+form select{
+    width: 30.5vw;
+}
