@@ -6,16 +6,18 @@
     --Color-Secundario:#733727; 
 }
 body{
+  display: flex;
+  flex-direction: column;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
 	line-height: 1.7;
 	color: var(--Color-Secundario);
 	background-color: var(--Color-De-Fondo);
-  margin: 0;
   width: 80vw;
   margin-left: 10vw;
-  padding-right: 10vw;
+  margin-right: 10vw;
 }
+
 nav {
   display: flex;
   align-items: center;
@@ -120,13 +122,19 @@ display: none;
   transform: translateX(100%) rotate(-270deg);
 }
 
+.general {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Color-De-Fondo);
+}
+
 .cuadro-centrado {
   width: -webkit-fill-available;
   margin-top: 5%;
   text-align: center !important;
   padding : 0.5rem;
   box-sizing: border-box;
-
 }
 
 .espacio-caja3d {
@@ -195,7 +203,6 @@ display: none;
   padding: 13px 20px;
   height: 48px;
   width: 100%;
-  font-weight: 500;
   border-radius: 4px;
   font-size: 14px;
   letter-spacing: 0.5px;
