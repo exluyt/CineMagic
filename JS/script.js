@@ -1,5 +1,8 @@
 //Agregamos in evento al boton de inicio de sesion
 document.addEventListener("DOMContentLoaded", function () {
+
+    var registro = this.getElementById('registro');
+
     document.getElementById('login').addEventListener('submit', function (event) {
         event.preventDefault(); // Evitar que el formulario se envíe por defecto
 
@@ -44,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let user = document.getElementById("user-r").value
         let pwd = document.getElementById("pwd-r").value
 
-        if (form.checkValidity()) {
+        if (registro.checkValidity()) {
             //Almacenamos los datos para pasarlos al inicio de sesion
         sessionStorage.setItem('user-r', user);
         sessionStorage.setItem('pwd-r', pwd);
