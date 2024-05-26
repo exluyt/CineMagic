@@ -248,3 +248,7 @@ a:hover {
   text-decoration: underline;
   color: var(--color-rojo);
 }
+
+#error{
+    visibility: hidden;
+}
