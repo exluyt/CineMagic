@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solicita Tu Pelicula</title>
-    <link rel="stylesheet" href="..//css/index.css">
+    <title>Solicita Tu Película</title>
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/solicitarPelicula.css">
 </head>
 <body>
@@ -12,64 +12,105 @@
         <nav>
             <div id="icono">
                 <img src="../src/LogoPalomitas.png" alt="Logo" width="75" height="100">
-                <img src="../src/CineMagicLogo.png" alt="Nomnbre" width="250" height="70">
+                <img src="../src/CineMagicLogo.png" alt="Nombre" width="250" height="70">
             </div>
             <div id="idiomas">
-                <img src="..//src/iconoIdioma.png" alt="Idiaoma" width="20" height="20">
+                <img src="../src/iconoIdioma.png" alt="Idioma" width="20" height="20">
                 <select name="lista" id="select-idioma">
                     <option value="1" selected>Español</option>
                     <option value="2">Inglés</option>
                 </select>
                 <p id="barraVertical">|</p>
-
                 <a class="enlace" href="IniciaSesion">
-                    <p>Cerrar Sesion</p>
+                    <p>Cerrar Sesión</p>
                 </a>
             </div>
         </nav>
     </header>
-        <main>
-            <section id="subContenedor">
-                <h1>Solicita tu pelicula</h1>
+    <main>
+    <!--
+        <section id="subContenedor">
+            <h1>Solicita tu película</h1>
+            <form action="">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
 
-                <form action="">
-                    <label for="">Correo electrónico</label>
-                    <input type="email">
+                <label for="anio">Año de la película</label>
+                <input type="text" id="anio" name="anio" maxlength="4" required>
 
-                    <label for="">Año de la pelicula</label>
-                    <input type="text" name="" id="" maxlength="4">
+                <label for="nombre">Nombre de la película</label>
+                <input type="text" id="nombre" name="nombre" required>
 
-                    <label for="">Nombre de la película</label>
-                    <input type="text" name="" id="">
+                <label for="idioma">Idioma original de la película</label>
+                <select name="idiomaPelicula" id="idioma" required>
+                    <option value="alemán">Alemán</option>
+                    <option value="chino">Chino</option>
+                    <option value="coreano">Coreano</option>
+                    <option value="español">Español</option>
+                    <option value="francés">Francés</option>
+                    <option value="inglés">Inglés</option>
+                    <option value="japonés">Japonés</option>
+                    <option value="otro">Otro</option>
+                </select>
 
-                    <label for="">Idioma original de la pelicula</label>
-                    <select name="idiomaPelicula" id="">
-                        <option value="">Alemán</option>
-                        <option value="">Chino</option>
-                        <option value="">Coreano</option>
-                        <option value="">Español</option>
-                        <option value="">Francés</option>
-                        <option value="">Inglés</option>
-                        <option value="">Japonés</option>
-                        <option value="">otro</option>
-                    </select>
-
+                <div class="checkbox-group">
                     <input id="ofertasCheckbox" type="checkbox" checked>
-                    <label for="ofertasCheckbox">Deseo recibir información sobre novedades y
-                        ofertas</label>
+                    <label for="ofertasCheckbox">Deseo recibir información sobre novedades y ofertas</label>
+                </div>
 
+                <div class="checkbox-group">
                     <input id="actualizacionesCheckbox" type="checkbox">
-                    <label for="actualizacionesCheckbox">Deseo recibir actualizaciones y respuesta sobre
-                        mi petición a mi correo electrónico</label>
+                    <label for="actualizacionesCheckbox">Deseo recibir actualizaciones y respuesta sobre mi petición a mi correo electrónico</label>
+                </div>
 
+                <div class="checkbox-group">
                     <input id="declaracionCheckbox" type="checkbox" required>
-                    <label for="declaracionCheckbox">Declaro haber leído y acepto las condiciones
-                        generales del programa y la normativa sobre protección de datos"</label>
+                    <label for="declaracionCheckbox">Declaro haber leído y acepto las condiciones generales del programa y la normativa sobre protección de datos</label>
+                </div>
 
-                    <input type="submit" value="Enviar">
-                    </form>
-            </section>
-        </main>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>-->
+        <h1 id="tituloSolicitud">Solicita tu pelicula</h1>
+        <form action="">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required>
 
-    </body>
-    </html>
+            <label for="nombre">Nombre de la película</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="anio">Año de la película</label>
+            <input type="text" id="anio" name="anio" maxlength="4" required>
+
+
+            <label for="idioma">Idioma original de la película</label>
+            <select name="idiomaPelicula" id="idioma" required>
+                <option value="alemán">Alemán</option>
+                <option value="chino">Chino</option>
+                <option value="coreano">Coreano</option>
+                <option value="español">Español</option>
+                <option value="francés">Francés</option>
+                <option value="inglés">Inglés</option>
+                <option value="japonés">Japonés</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <div class="ofertas-group">
+                <input id="ofertasCheckbox" type="checkbox" checked>
+                <label for="ofertasCheckbox">Deseo recibir información sobre novedades y ofertas</label>
+            </div>
+
+            <div class="actualizaciones-group">
+                <input id="actualizacionesCheckbox" type="checkbox">
+                <label for="actualizacionesCheckbox">Deseo recibir actualizaciones y respuesta sobre mi petición a mi correo electrónico</label>
+            </div>
+
+            <div class="declaraciones-group">
+                <input id="declaracionCheckbox" type="checkbox" required>
+                <label for="declaracionCheckbox">Declaro haber leído y acepto las condiciones generales del programa y la normativa sobre protección de datos</label>
+            </div>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+</body>
+</html>

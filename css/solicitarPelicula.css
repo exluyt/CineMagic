@@ -4,32 +4,42 @@
     --color-naranja: #D76D34;
     --color-marron: #2D1D1A;
     --color-rojo: #733727;  
+    --color-negro:#1f2029;
 }
-
-#subContenedor{
-    box-shadow: -0.3rem 0.2rem 0.5rem var(--color-rojo);
-    background-color:var(--color-marron) ;
-    color: white;
-    width: 50%;
-    margin-left: 20%;
-    border-radius: 1rem;
-    padding-right: 3%;
-    padding-left: 3%;
-    padding-bottom: 5vh;
-
+main{
+    display: grid;
+    justify-content: center;
 }
-#subContenedor h1{
-    padding-top: 2vh;
-    text-shadow:  -0.2rem 0.2rem 0.1rem var(--color-azul);
+#tituloSolicitud{
+    color: var(--color-marron);
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bolder;
 }
 form{
     display: grid;
-    
+    border-radius: 0.3rem;
+    color: var(--color-rojo);
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-top:4vh ;
+    padding-bottom:4vh ;
+    padding-left:4vw ;
+    padding-right:4vw ;
+    background-color: var(--color-azul);
+    width: 40vw;
 }
 form input{
-    width: 30vw;
-    background-color: ;
+    color: white;
+    height: 1.6rem;
+    border-radius:0.3rem ;
+    background-color: var(--color-negro);
+    box-shadow: 5px 2px 1px  var(--color-negro);
 }
 form select{
-    width: 30.5vw;
+    color: white;
+    height: 1.6rem;
+    border-radius:0.3rem ;
+    background-color: var(--color-negro);
+    box-shadow: 5px 2px 1px  var(--color-negro);
 }
