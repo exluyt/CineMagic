@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
 
-:root{
-    --Color-De-Fondo:#EAC39C;
-    --Color-UI: #D76D34;
-    --Color-Secundario:#733727; 
+:root {
+  --Color-De-Fondo: #EAC39C;
+  --Color-UI: #D76D34;
+  --Color-Secundario: #733727;
 }
-body{
+
+body {
   display: flex;
   flex-direction: column;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 300;
-	line-height: 1.7;
-	color: var(--Color-Secundario);
-	background-color: var(--Color-De-Fondo);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--Color-Secundario);
+  background-color: var(--Color-De-Fondo);
   width: 80vw;
   margin-left: 10vw;
   margin-right: 10vw;
@@ -53,16 +54,18 @@ p {
   font-weight: 500;
   font-size: 14px;
 }
+
 h4 {
   font-weight: 600;
   margin-top: 5%;
   margin-bottom: 5%;
 }
+
 h6 {
   margin-bottom: 1rem
 }
 
-h6 span{
+h6 span {
   padding: 0 20px;
   font-weight: 700;
 }
@@ -71,15 +74,15 @@ h6 span{
 * para que el checkbox real este oculto
 */
 .pulsador:checked,
-.pulsador:not(:checked){
-display: none;
+.pulsador:not(:checked) {
+  display: none;
 }
 
 /*
 * checkbox de cambio de pantalla (con estilo alargado)
 */
-.pulsador:checked + label,
-.pulsador:not(:checked) + label{
+.pulsador:checked+label,
+.pulsador:not(:checked)+label {
   position: relative;
   display: block;
   width: 60px;
@@ -96,8 +99,8 @@ display: none;
 * el z-index se asegura de que el logo esté encima del checkbox naranja
 * el top y left posicionan el logo en la esquina izquierda del checkbox
 */
-.pulsador:checked + label:before,
-.pulsador:not(:checked) + label:before{
+.pulsador:checked+label:before,
+.pulsador:not(:checked)+label:before {
   position: absolute;
   display: block;
   width: 36px;
@@ -118,7 +121,7 @@ display: none;
 /*
 * movimiento del logo al pulsar el checkbox
 */
-.pulsador:checked + label:before {
+.pulsador:checked+label:before {
   transform: translateX(100%) rotate(-270deg);
 }
 
@@ -133,7 +136,7 @@ display: none;
   width: -webkit-fill-available;
   margin-top: 5%;
   text-align: center !important;
-  padding : 0.5rem;
+  padding: 0.5rem;
   box-sizing: border-box;
 }
 
@@ -155,16 +158,18 @@ display: none;
   position: relative;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  transition: all 600ms ease-out; 
+  transition: all 600ms ease-out;
 }
 
-.pantalla-inicio, .pantalla-registro {
+.pantalla-inicio,
+.pantalla-registro {
   width: 100%;
   height: 100%;
   background-color: #927C72;
   position: absolute;
   border-radius: 6px;
   -webkit-transform-style: preserve-3d;
+
 }
 
 /**
@@ -174,11 +179,11 @@ display: none;
   transform: rotateY(180deg);
 }
 
-.pulsador:checked ~ .espacio-caja3d .caja3d {
+.pulsador:checked~.espacio-caja3d .caja3d {
   transform: rotateY(180deg);
 }
 
-.centro-caja3d{
+.centro-caja3d {
   position: absolute;
   width: 100%;
   padding: 0 40px;
@@ -191,11 +196,11 @@ display: none;
   box-sizing: border-box;
 }
 
-.posicion-casillas{ 
+.posicion-casillas {
   position: relative;
   display: block;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
   margin-top: .5em;
 }
 
@@ -209,7 +214,7 @@ display: none;
   color: #c4c3ca;
   background-color: #1f2029;
   border: none;
-  box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+  box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
 }
 
 /**
@@ -218,10 +223,10 @@ display: none;
 .casillas:focus {
   color: #000000;
   background-color: #ffffff;
-  box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
+  box-shadow: 0 8px 24px 0 rgba(16, 39, 112, .2);
 }
 
-.boton{  
+.boton {
   border-radius: 4px;
   height: 44px;
   font-size: 13px;
@@ -234,14 +239,14 @@ display: none;
   color: #000000;
 }
 
-.boton:hover{  
+.boton:hover {
   background-color: #000000;
   color: var(--Color-UI);
-  box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
+  box-shadow: 0 8px 24px 0 rgba(16, 39, 112, .2);
 }
 
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .link {
@@ -253,6 +258,6 @@ a:hover {
   color: var(--Color-Secundario);
 }
 
-#error{
-    visibility: hidden;
+#error {
+  visibility: hidden;
 }
