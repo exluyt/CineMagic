@@ -1,0 +1,128 @@
+body {
+    background-color: #EAC39C;
+    width: 80vw;
+    margin-left: 10vw;
+    text-align: center;
+}
+
+.click{
+    cursor: pointer;
+}
+
+h1 {
+    color: #733727;
+    text-shadow: -0.2rem 0.1rem 0.1rem #733727;
+    font-size: 2rem;
+    margin: auto;
+}
+
+main {
+    background-color: #927C72;
+    border-radius: 10px;
+    margin-top: 3vw;
+    box-shadow: -0.3rem 0.2rem 0.5rem #2D1D1A;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+#icono {
+    gap: 30px;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+}
+
+#select-idioma {
+    border-color: #EAC39C;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #EAC39C;
+}
+
+#select-idioma option {
+    background-color: #EAC39C;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+#idiomas {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+#caja1 {
+    display: flex;
+    gap: 5vw;
+    padding: 5vw;
+    padding-bottom: 0;
+}
+
+#video {
+    width: 32vw;
+    height: 250px;
+}
+
+#izquierda {
+    text-align: left;
+    margin-top: 0.5vw;
+    display: inline-flex;
+}
+
+#fechaP {
+    margin-top: 0;
+    margin-left: 0.5vw;
+}
+
+#fecha {
+    width: 15px;
+    height: 15px;
+}
+
+#descripcion {
+    margin-left: auto;
+    font-size: 18px;
+}
+
+#informacion {
+    text-align: left;
+    padding-left: 5vw;
+    display: flex;
+    font-size: 22px;
+}
+
+#valoracion {
+    margin-left: auto;
+    padding-right: 5vw;
+    display: flex;
+    margin-top: -0.3vw;
+}
+
+#estrellas {
+    margin-top: 1.5vw;
+    margin-left: 1vw;
+}
+
+.estrellaGold {
+    width: 20px;
+    height: 20px;
+}
+
+.estrellaGris {
+    width: 23px;
+    height: 23px;
+}
+
+#imagenDirector {
+    width: 30px;
+    height: 30px;
+    margin-top: 1.5vw;
+}
+
+#rojo {
+    color: #733727;
+    margin-left: 0.5vw;
+}
