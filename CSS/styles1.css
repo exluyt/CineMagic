@@ -102,10 +102,10 @@ nav {
     padding-right: 5vw;
     display: flex;
     margin-top: -0.3vw;
+    align-items: center;
 }
 
 #estrellas {
-    margin-top: 1.5vw;
     margin-left: 1vw;
 }
 
@@ -122,7 +122,6 @@ nav {
 #imagenDirector {
     width: 30px;
     height: 30px;
-    margin-top: 1.5vw;
 }
 
 #rojo {
@@ -138,6 +137,7 @@ nav {
 
 #direccion{
     display: flex;
+    align-items: center;
 }
 
 @media(max-width: 1000px) {
@@ -153,14 +153,10 @@ nav {
         width: 80%;
         margin-left: 10%;
     }
-
-    #estrellas{
-        margin-top: 2.3vw;
-    }
 }
 
 @media(max-width: 760px){
-    #video{
+    #video, #director, #nombreLogo{
         display: none;
     }
 
@@ -170,11 +166,21 @@ nav {
 
     #direccion{
         margin-top: 2.8vw;
-        margin-left: 20%;
+        align-items: center;
+        justify-content: center;
     }
 
     #valoracion{
-        margin-left: 25%;
+        display: block;
+        text-align: center;
+    }
+
+    #icono{
+        margin-left: 5%;
+    }
+
+    #idiomas{
+        margin-right: 5%;
     }
 }
 
