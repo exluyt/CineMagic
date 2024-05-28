@@ -5,7 +5,7 @@ body {
     text-align: center;
 }
 
-.click{
+.click {
     cursor: pointer;
 }
 
@@ -14,6 +14,7 @@ h1 {
     text-shadow: -0.2rem 0.1rem 0.1rem #733727;
     font-size: 2rem;
     margin: auto;
+    padding-top: 3vw;
 }
 
 main {
@@ -59,6 +60,7 @@ nav {
     gap: 5vw;
     padding: 5vw;
     padding-bottom: 0;
+    padding-top: 2vw;
 }
 
 #video {
@@ -85,6 +87,7 @@ nav {
 #descripcion {
     margin-left: auto;
     font-size: 18px;
+    animation: shadow 3s;
 }
 
 #informacion {
@@ -126,3 +129,82 @@ nav {
     color: #733727;
     margin-left: 0.5vw;
 }
+
+#type {
+    animation: typing 2s;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#direccion{
+    display: flex;
+}
+
+@media(max-width: 1000px) {
+    main{
+        display: block;
+    }
+    #caja1{
+        display: block;
+    }
+
+    #video{
+        display: block;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #estrellas{
+        margin-top: 2.3vw;
+    }
+}
+
+@media(max-width: 760px){
+    #video{
+        display: none;
+    }
+
+    #informacion{
+        display: block;
+    }
+
+    #direccion{
+        margin-top: 2.8vw;
+        margin-left: 20%;
+    }
+
+    #valoracion{
+        margin-left: 25%;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes shadow {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes desplazamientoIzquierda {
+    from{
+      left: -50%;
+      opacity: 10%;
+    }to{
+      
+      left: 0;
+      opacity: 100%;
+    }
+  }
