@@ -26,14 +26,7 @@ document.addEventListener('keydown', function (event) {
         moveSlider('prev')
     }
 })
-window.addEventListener('scroll', function() {
-    var nav = document.querySelector('nav');
-    if (window.scrollY > 0) {
-        nav.classList.add('shrink');
-    } else {
-        nav.classList.remove('shrink');
-    }
-});
+
 function moveSlider(direction) {
     let sliderItems = sliderList.querySelectorAll('.item')
     let thumbnailItems = document.querySelectorAll('.thumbnail .item')

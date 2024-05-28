@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+:root {
+  --color-rosa-claro: #EAC39C;
+  --color-azul: #927C72;
+  --color-naranja: #D76D34;
+  --color-marron: #2D1D1A;
+  --color-rojo: #733727;
+}
+body{
+  display: flex;
+  flex-direction: column;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	line-height: 1.7;
+	color: var(--color-rojo);
+	background-color: var(--color-rosa-claro);
+  width: 80vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+#icono {
+  gap: 30px;
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+}
+
+#select-idioma {
+  border-color: var(--color-rosa-claro);
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  background-color: var(--color-rosa-claro);
+}
+
+#select-idioma option {
+  background-color: var(--color-rosa-claro);
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+#idiomas {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+p {
+  font-weight: 500;
+  font-size: 14px;
+}
+h4 {
+  font-weight: 600;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+h6 {
+  margin-bottom: 1rem
+}
+
+h6 span{
+  padding: 0 20px;
+  font-weight: 700;
+}
+
+/*
+* para que el checkbox real este oculto
+*/
+.pulsador:checked,
+.pulsador:not(:checked){
+display: none;
+}
+
+/*
+* checkbox de cambio de pantalla (con estilo alargado)
+*/
+.pulsador:checked + label,
+.pulsador:not(:checked) + label{
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 16px;
+  border-radius: 8px;
+  padding: 0;
+  margin: 10px auto;
+  background-color: var(--color-naranja);
+  cursor: pointer;
+}
+
+/*
+* logo encima del checkbox al pulsarse
+* el z-index se asegura de que el logo esté encima del checkbox naranja
+* el top y left posicionan el logo en la esquina izquierda del checkbox
+*/
+.pulsador:checked + label:before,
+.pulsador:not(:checked) + label:before{
+  position: absolute;
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: var(--color-naranja);
+  background-color: #020305;
+  font-family: 'unicons';
+  content: '\eb4f';
+  z-index: 20;
+  top: -10px;
+  left: -10px;
+  line-height: 36px;
+  font-size: 24px;
+  transition: all 0.5s ease;
+}
+
+/*
+* movimiento del logo al pulsar el checkbox
+*/
+.pulsador:checked + label:before {
+  transform: translateX(100%) rotate(-270deg);
+}
+
+
+.cuadro-centrado {
+  width: -webkit-fill-available;
+  margin-top: 5%;
+  text-align: center !important;
+  padding : 0.5rem;
+  box-sizing: border-box;
+}
+
+.espacio-caja3d {
+  position: relative;
+  width: 440px;
+  max-width: 100%;
+  height: 400px;
+  transform-style: preserve-3d;
+  perspective: 800px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.caja3d {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: all 600ms ease-out; 
+}
+
+.pantalla-inicio, .pantalla-registro {
+  width: 100%;
+  height: 100%;
+  background-color: #927C72;
+  position: absolute;
+  border-radius: 6px;
+  -webkit-transform-style: preserve-3d;
+}
+
+/**
+* rotación de la pantalla de registro, al entrar en la pagina (para que esta este detras del inicio)
+*/
+.pantalla-registro {
+  transform: rotateY(180deg);
+}
+
+.pulsador:checked ~ .espacio-caja3d .caja3d {
+  transform: rotateY(180deg);
+}
+
+.centro-caja3d{
+  position: absolute;
+  width: 100%;
+  padding: 0 40px;
+  top: 50%;
+  left: 0;
+  transform: translate3d(0, -50%, 35px);
+  z-index: 20;
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.posicion-casillas{ 
+  position: relative;
+  display: block;
+    margin: 0;
+    padding: 0;
+  margin-top: .5em;
+}
+
+.casillas {
+  padding: 13px 20px;
+  height: 48px;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #c4c3ca;
+  background-color: #1f2029;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+}
+
+/**
+* efecto al pinchar en cada casilla
+*/
+.casillas:focus {
+  color: #000000;
+  background-color: #ffffff;
+  box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
+}
+
+.boton{  
+  border-radius: 4px;
+  height: 44px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0 30px;
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--color-naranja);
+  color: #000000;
+}
+
+.boton:hover{  
+  background-color: #000000;
+  color: var(--color-naranja);
+  box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.link {
+  color: var(--color-rojo);
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: var(--color-rojo);
+}

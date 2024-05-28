@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Indice | Registro</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="icono">
+                <img src="img/LogoPalomitas.png" alt="Logo" width="75" height="100">
+                <img src="img/Nombre.svg" alt="Nombre">
+            </div>
+            <div id="idiomas">
+                <img src="img/iconoIdioma.png" alt="Idioma" width="20" height="20">
+                <select name="lista" id="select-idioma">
+                    <option value="1" selected>Español</option>
+                    <option value="2">Inglés</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <section class="cuadro-centrado">
+        <h6><span>Inicio de Sesión </span><span>Registro </span></h6>
+        <input class="pulsador" type="checkbox" id="cambio-modo" name="cambio-modo"/>
+        <label for="cambio-modo"></label>
+
+        <section class="espacio-caja3d">
+            <section class="caja3d">
+                <article class="pantalla-inicio">
+                    <div class="centro-caja3d">
+                        <form id="login">
+                            <h4>Inicio de sesión</h4>
+                            <div class="posicion-casillas">
+                                <input type="text" class="casillas" placeholder="Usuario" required>
+                            </div>
+                            <div class="posicion-casillas">
+                                <input type="password" class="casillas" placeholder="Contraseña" required>
+                            </div>
+                          
+                            <button href="" class="boton">INICIAR SESIÓN</button>
+                            <br>
+                            <a href="" class="link">¿Has olvidado la contraseña?</a>
+                        </form>
+                    </div>
+                </article>
+                <article class="pantalla-registro">
+                    <div class="centro-caja3d">
+                        <form id="registro">
+                            <h4>Registro</h4>
+                            <div class="posicion-casillas">
+                                <input type="text" class="casillas" placeholder="Usuario" required>
+                            </div>
+                            <div class="posicion-casillas">
+                                <input type="tel" class="casillas" placeholder="Número de teléfono" minlength="9" maxlength="9" pattern="[0-9]{9}" required>
+                            </div>
+                            <div class="posicion-casillas">
+                                <input type="email" class="casillas" placeholder="Correo electrónico" required>
+                            </div>
+                            <div class="posicion-casillas">
+                                <input type="password" class="casillas" placeholder="Contraseña" required>
+                            </div>
+                            <br>
+                            <button href="" class="boton">REGISTRARSE</button>
+                        </form>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </section>
+
+
+
+</body>
+
+</html>

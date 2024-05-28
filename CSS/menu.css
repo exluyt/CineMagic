@@ -22,15 +22,15 @@ body {
     border-color: #EAC39C !important;
     font-family: Arial, sans-serif;
     font-size: 14px;
-    background-color: var(--color-rosa-claro)!important;
-  }
-  
-  #select-idioma option {
-    background-color: var(--color-rosa-claro)!important;
+    background-color: var(--color-rosa-claro) !important;
+}
+
+#select-idioma option {
+    background-color: var(--color-rosa-claro) !important;
     font-family: Arial, sans-serif;
     font-size: 14px;
-  }
-  
+}
+
 
 /* nav section  */
 nav {
@@ -51,15 +51,15 @@ nav.shrink {
     padding-left: 8.3vw;
     padding-right: 8.3vw;
 }
-  
-  #icono {
+
+#icono {
     gap: 30px;
     display: flex;
     font-size: 25px;
     align-items: center;
-  }
-  
-  #select-idioma {
+}
+
+#select-idioma {
     border: none;
     padding: 10px;
     font-family: Arial, sans-serif;
@@ -67,28 +67,28 @@ nav.shrink {
     background-color: var(--color-rosa-claro);
     padding-left: 0px;
     font-family: MiFuente;
-  }
-  
-  
-  #select-idioma option {
+}
+
+
+#select-idioma option {
     background-color: var(--color-rosa-claro);
     font-family: Arial, sans-serif;
     font-size: 14px;
-  }
-  
-  #idiomas {
+}
+
+#idiomas {
     margin-left: auto;
     display: flex;
     align-items: center;
-  }
-  
-  #barraVertical {
+}
+
+#barraVertical {
     margin-left: 5px;
     font-size: 15px;
     color: var(--color-naranja);
-  }
-  
-  .enlace {
+}
+
+.enlace {
     display: flexbox;
     margin-left: 20px;
     font-size: 11px;
@@ -99,15 +99,16 @@ nav.shrink {
     color: black;
     text-decoration: none;
     font-family: MiFuente;
-  }
-  .enlace p{
+}
+
+.enlace p {
     width: max-content;
-  }
-  
-  #enlace:hover{
+}
+
+#enlace:hover {
     background-color: rgba(229, 229, 229, 0.4);
-  }
-  
+}
+
 /* slider section  */
 
 .slider {
@@ -149,6 +150,7 @@ nav.shrink {
     width: 80%;
     text-shadow: 2px 2px 1px #000F;
 }
+
 .title {
     text-shadow: 4px 4px 1px #000F;
 }
@@ -394,8 +396,104 @@ nav.shrink {
         opacity: 0;
     }
 }
+
 #wrapper {
     margin: 0;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 8.3vw;
+    margin-right: 8.3vw;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    height: 1000px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+
+
+.card {
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 20%;
+    cursor: pointer;
+    position: relative;
+    transition: flex-grow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-timing: 0.35s;
+}
+
+.card:hover {
+    flex-grow: 3;
+}
+
+.card>.background {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.5);
+    z-index: -1;
+    transition: var(--transition-timing) ease;
+}
+
+.card:hover>.background {
+    filter: brightness(1);
+}
+
+.card>.card-content {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 20px;
+    overflow: hidden;
+    transition: var(--transition-timing);
+    z-index: 10;
+}
+
+.card-content>* {
+    transition: var(--transition-timing);
+}
+
+.card-content>.titleC {
+    translate: 0 100%;
+    opacity: 0;
+}
+
+.card:hover .titleC {
+    opacity: 1;
+    translate: 0 0;
+    color: var(--color-naranja);
+}
+
+.card:hover .negro {
+    opacity: 1;
+    translate: 0 0;
+    color: var(--color-marron);
+}
+
+#cines {
+    color: var(--color-naranja);
+    text-align: center;
+    margin-top: 10%;
+    font-size: 4rem;
+}
+
+.anim {
+    opacity: 0;
+}
+
+.anim.active {
+    opacity: 1;
+    transition: opacity 1s;
 }
