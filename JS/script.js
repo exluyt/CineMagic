@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ];
 
         // Añadimos el usuario registrado si existe en sessionStorage
-        var userR = sessionStorage.getItem('user-r');
+        var userR = sessionStorage.getItem('user-r1');
         var pwdR = sessionStorage.getItem('pwd-r');
         if (userR && pwdR) {
             usuarios.push({ user: userR, pwd: pwdR });
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Validación manual
         if (registro.checkValidity()) {
             // Almacenamos los datos para pasarlos al inicio de sesión
-            sessionStorage.setItem('user-r', user);
+            sessionStorage.setItem('user-r1', user);
             sessionStorage.setItem('pwd-r', pwd);
 
             // Pulsamos en la checkbox para cambiar al inicio de sesión con la animación
