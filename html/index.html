@@ -10,27 +10,28 @@
     <header>
         <nav>
             <div id="icono">
-                <img src="../src/LogoPalomitas.png" alt="Logo" width="75" height="100">
-                <img src="../src/CineMagicLogo.png" alt="Nomnbre" width="250" height="70">
+                <img src="../src/LogoPalomitas.png" alt="Logo" title="Cine Magic" width="70"  class="click"
+                onclick="window.open('menu.html')">
+                <img src="../src/CineMagicLogo.png" alt="Nombre" width="250"  id="textoLogo">
             </div>
             <div id="idiomas">
-                <img src="..//src/iconoIdioma.png" alt="Idiaoma" width="20" height="20">
-                <select name="lista" id="select-idioma">
-                    <option value="1" selected>Español</option>
+                <img src="..//src/iconoIdioma.png" alt="Idioma" width="20" height="20">
+                <select name="lista" id="select-idioma" class="textoHeader">
+                    <option value="1" selected class="textoHeader">Español</option>
                     <option value="2">Inglés</option>
                 </select>
                 <p id="barraVertical">|</p>
-                <a class="enlace" href="IniciaSesion">
-                    <p>Inicia Sesion</p>
+                <a class="enlace" href="">
+                    <p class="textoHeader">Inicia Sesion</p>
                 </a>
             </div>
         </nav>
     </header>
         <main>
-            <section >
-                <h1 id="titulo">¡Donde la <br> magia del cine <br> cobra vida!</h1>
-                <h5 id="descripcion">Mira tráilers de películas antiguas, actuales o <br> futuras, 
-                    solicita nuevas películas y <br>compartelo con tus conocidos.</h5>
+            <section>
+                    <h1 id="titulo">¡Donde la <br> magia del cine <br> cobra vida!</h1>
+                    <h5 id="descripcion">Mira tráilers de películas antiguas, actuales o <br> futuras, 
+                        solicita nuevas películas y <br>compartelo con tus conocidos.</h5>
                 <section id="cienPeliculas">
                     <img src="..//src/productoras.png" alt="">
                     <p> Únete para ver  <span id="resalte">+100 Películas</span>  y empezar a <br> valorar cual 

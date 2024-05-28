@@ -9,13 +9,78 @@
     --color-marron: #2D1D1A;
     --color-rojo: #733727;  
 }
+nav {
+  height: 12vh;
+  display: flex;
+  align-items: center;
+}
+#icono {
+  display: flex;
+  gap: 1.3rem;
+  align-items: center;
+}
+#icono img{
+  max-width: 100%;
+  height: auto;
+}
+#select-idioma {
+  font-family: MiFuente;
+  border: none;
+  background-color: var(--color-rosa-claro);
+}
+.textoHeader{
+  font-size: 1.2rem;
+}
+#idiomas {
+  align-items: center;
+  margin-left: auto;
+  display: flex;
+}
+#barraVertical {
+  margin-left: 5%;
+  font-size: 2vw;
+  color: var(--color-naranja);
+}
+.enlace {
+  background-color: var(--color-marron);
+  margin-left: 2vw;
+  border: solid 1px black;
+  border-radius: 10px;
+  padding: 5px;
+  color: black;
+  text-decoration: none;
+  font-family: MiFuente;
+}
+.enlace p{
+  color: var(--color-rosa-claro);
+  margin: 1vh;
+  width: max-content;
+}
+.enlace:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+#resalte{
+  font-weight: bold;
+  color: var(--Color-UI);
+}
+
+@media (max-width:768px){
+  #textoLogo{
+    display: none;
+  }
+  .textoHeader{
+    font-size: 0.8rem;
+  }
+}
+/*HeaderLimit*/
 body{
     background-color: var(--color-rosa-claro);
     font-family: MiFuente ;
     margin: 0;
     width: 80vw;
     margin-left: 10vw;
-    padding-right: 10vw;
+    margin-right: 10vw;
 }
 main{
   display: flex;
@@ -25,75 +90,12 @@ main section{
   width: 35vw;
 }
 main h1{
-  color: var(--Color-Secundario);
   font-style: italic;
-  font-size: 3rem;
-    }
+  font-size: 3vw;
+  }
 main h5{
+  font-size: 1vw;
   margin-bottom: 20vh;
-}
-nav {
-  display: flex;
-  align-items: center;
-}
-
-#icono {
-  gap: 30px;
-  display: flex;
-  font-size: 25px;
-  align-items: center;
-}
-
-#select-idioma {
-  border: none;
-  padding: 10px;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  background-color: var(--color-rosa-claro);
-  padding-left: 0px;
-  font-family: MiFuente;
-}
-
-
-#select-idioma option {
-  background-color: var(--color-rosa-claro);
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-}
-
-#idiomas {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-}
-
-#barraVertical {
-  margin-left: 5px;
-  font-size: 15px;
-  color: var(--color-naranja);
-}
-
-.enlace {
-  display: flexbox;
-  margin-left: 20px;
-  font-size: 11px;
-  border: solid 1px black;
-  border-radius: 10px;
-  padding: 5px;
-  width: max-content;
-  color: black;
-  text-decoration: none;
-  font-family: MiFuente;
-}
-.enlace p{
-  width: max-content;
-}
-#enlace:hover{
-  background-color: rgba(229, 229, 229, 0.4);
-}
-#resalte{
-  font-weight: bold;
-  color: var(--Color-UI);
 }
 #cienPeliculas{
   display: flex;
@@ -101,6 +103,22 @@ nav {
   position: relative;
   animation: desplazamientoLateralInverso 2s ;
 }
+#contenedorImagen{
+float: right;
+  top: 25%;
+  right: 10%;
+  border-radius: 1vb;
+  animation: desplazamientoVertical 2s;
+  width: 50%;
+}
+#contenedorImagen img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 1vb;
+  border: 0.2vw solid var(--color-marron);
+  box-shadow: 0 0 10rem var(--color-naranja);
+}
+/*
 #cienPeliculas img{
   margin-right: 1vw;
   width: fit-content;
@@ -108,12 +126,12 @@ nav {
   height: 5vh;
 }
 #cienPeliculas p{
-
   text-align: justify;
 }
+*/
 #titulo{
-position: relative;
-animation: desplazamientoLateral 2s;
+  position: relative;
+  animation: desplazamientoLateral 2s;
 }
 #descripcion{
   position: relative;
@@ -147,39 +165,34 @@ animation: desplazamientoLateral 2s;
   }
 }
 
-#contenedorImagen{
-  position: absolute;
-  top: 25%;
-  right: 10%;
-  animation: desplazamientoVertical 2s;
-  width: fit-content;
-  border-radius: 1vb;
-  box-shadow: 0px 1rem 20rem var(--color-naranja);
-}
-#contenedorImagen img{
-  border-radius: 1vb;
-  border: 0.3cap solid var(--color-marron);
-  box-shadow: -2px 3px 3px var(--color-marron);
-  width: 60cap;
-
-}
+/*
 @media (max-width:992px) {
   @keyframes desplazamientoVertical {
     from{
       top: -0%;
       opacity: 10%;
     }to{
-      top: 40%;
+      top: 30%;
       opacity: 100%;
     }
   }
-  h5{
-    margin-bottom: 50vh;
+  main h1{
+    font-size: 2.5rem;
+  }
+  main h5{
+    margin-bottom: 10vh;
+  }
+  main section{
+    width: 200%;
   }
   #contenedorImagen {
-    top: 40%;
+    top: 30%;
   }
   #contenedorImagen img{
-    width: 30cap;
-  }
+    width: 50%;
+  } 
 }
+@media (max-width: 768px) {
+
+}
+*/
