@@ -132,6 +132,12 @@ display: none;
   padding : 0.5rem;
   box-sizing: border-box;
 }
+.general {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Color-De-Fondo);
+}
 
 .espacio-caja3d {
   position: relative;
@@ -247,4 +253,7 @@ a:hover {
 .link:hover {
   text-decoration: underline;
   color: var(--color-rojo);
+}
+#error{
+    visibility: hidden;
 }

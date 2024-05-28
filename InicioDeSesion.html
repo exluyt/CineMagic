@@ -29,7 +29,7 @@
 
     <section class="cuadro-centrado">
         <h6><span>Inicio de Sesión </span><span>Registro </span></h6>
-        <input class="pulsador" type="checkbox" id="cambio-modo" name="cambio-modo"/>
+        <input class="pulsador" type="checkbox" id="cambio-modo" name="cambio-modo" />
         <label for="cambio-modo"></label>
 
         <section class="espacio-caja3d">
@@ -39,13 +39,13 @@
                         <form id="login">
                             <h4>Inicio de sesión</h4>
                             <div class="posicion-casillas">
-                                <input type="text" class="casillas" placeholder="Usuario" required>
+                                <input type="text" class="casillas" placeholder="Usuario" name="user" id="user" required>
                             </div>
                             <div class="posicion-casillas">
-                                <input type="password" class="casillas" placeholder="Contraseña" required>
+                                <input type="password" class="casillas" placeholder="Contraseña" name="pwd" id="pwd" required>
                             </div>
-                          
-                            <button href="" class="boton">INICIAR SESIÓN</button>
+                            <p id="error">Usuario o contraseña incorrectos</p>
+                            <button class="boton" type="submit">INICIAR SESIÓN</button>
                             <br>
                             <a href="" class="link">¿Has olvidado la contraseña?</a>
                         </form>
@@ -56,19 +56,19 @@
                         <form id="registro">
                             <h4>Registro</h4>
                             <div class="posicion-casillas">
-                                <input type="text" class="casillas" placeholder="Usuario" required>
+                                <input type="text" class="casillas" placeholder="Usuario" id="user-r" required>
                             </div>
                             <div class="posicion-casillas">
-                                <input type="tel" class="casillas" placeholder="Número de teléfono" minlength="9" maxlength="9" pattern="[0-9]{9}" required>
+                                <input type="tel" class="casillas" placeholder="Número de teléfono" required>
                             </div>
                             <div class="posicion-casillas">
                                 <input type="email" class="casillas" placeholder="Correo electrónico" required>
                             </div>
                             <div class="posicion-casillas">
-                                <input type="password" class="casillas" placeholder="Contraseña" required>
+                                <input type="password" class="casillas" placeholder="Contraseña" id="pwd-r" required>
                             </div>
                             <br>
-                            <button href="" class="boton">REGISTRARSE</button>
+                            <button class="boton" type="submit">REGISTRARSE</button>
                         </form>
                     </div>
                 </article>
@@ -77,7 +77,7 @@
     </section>
 
 
-
+    <script src="JS/script.js"></script>
 </body>
 
 </html>
