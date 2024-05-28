@@ -5,16 +5,22 @@ body {
     text-align: center;
 }
 
+.click{
+    cursor: pointer;
+}
+
 h1 {
     color: #733727;
-    font-size: 30px;
-    margin-top: auto;
+    text-shadow: -0.2rem 0.1rem 0.1rem #733727;
+    font-size: 2rem;
+    margin: auto;
 }
 
 main {
     background-color: #927C72;
     border-radius: 10px;
     margin-top: 3vw;
+    box-shadow: -0.3rem 0.2rem 0.5rem #2D1D1A;
 }
 
 nav {
@@ -55,23 +61,23 @@ nav {
     padding-bottom: 0;
 }
 
-#video{
+#video {
     width: 32vw;
     height: 250px;
 }
 
-#izquierda{
+#izquierda {
     text-align: left;
     margin-top: 0.5vw;
     display: inline-flex;
 }
 
-#fechaP{
+#fechaP {
     margin-top: 0;
     margin-left: 0.5vw;
 }
 
-#fecha{
+#fecha {
     width: 15px;
     height: 15px;
 }
@@ -95,17 +101,17 @@ nav {
     margin-top: -0.3vw;
 }
 
-#estrellas{
+#estrellas {
     margin-top: 1.5vw;
     margin-left: 1vw;
 }
 
-.estrellaGold{
+.estrellaGold {
     width: 20px;
     height: 20px;
 }
 
-.estrellaGris{
+.estrellaGris {
     width: 23px;
     height: 23px;
 }
@@ -114,4 +120,9 @@ nav {
     width: 30px;
     height: 30px;
     margin-top: 1.5vw;
+}
+
+#rojo {
+    color: #733727;
+    margin-left: 0.5vw;
 }
