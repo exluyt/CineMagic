@@ -23,14 +23,7 @@ nav {
   max-width: 100%;
   height: auto;
 }
-#select-idioma {
-  font-family: MiFuente;
-  border: none;
-  background-color: var(--color-marron);
-  color: var(--color-rosa-claro);
-  border-radius: 0.5rem;
-  padding: 1vh;
-}
+
 .textoHeader{
   font-size: 1.2rem;
 }
@@ -80,7 +73,7 @@ nav {
 }
 /*HeaderLimit*/
 /*Wrapper*/
-body{
+.indexBody{
     background-color: var(--color-rosa-claro);
     font-family: MiFuente ;
     margin: 0;
@@ -89,22 +82,23 @@ body{
     margin-right: 10vw;
 }
 
-main{
+.indexMain{
   display: flex;
   margin-top: 5vh;
 }
-main section{
+.indexMain section{
   width: 35vw;
 }
-main h1{
+.indexMain h1{
   font-style: italic;
   font-size: 3vw;
   }
 #cienPeliculas{
+  position: relative;
   display: flex;
   align-items: center;
-  position: relative;
   animation: desplazamientoLateralInverso 2s ;
+
 }
 #contenedorImagen{
   position: absolute;
