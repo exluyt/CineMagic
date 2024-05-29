@@ -125,6 +125,9 @@ nav {
   position: relative;
   animation: desplazamientoLateral 4s;
 }
+#vistaMenuMovil{
+  display: none;
+}
 /*animaciones de entrada a los textos */
 @keyframes desplazamientoLateral {
   from{
@@ -164,7 +167,15 @@ nav {
     font-size: 1rem;
   }
   #contenedorImagen {
-    width: 45%;
+    top: 10%;
+    width: 30%;
+    height: auto;
+  }
+  #vistaMenuPc {
+    display: none;
+  }
+  #vistaMenuMovil{
+    display: block;
   }
 }
 @media (max-width: 768px) {
@@ -184,16 +195,22 @@ nav {
     width: 13%;
   }
   #contenedorImagen{
-    left: 10%;
-    top: 50%;
-    width: 60%;
-  }
-  #vistaMenuPc {
-    display: none;
+    top: 10%;
+    width: 30%;
   }
 
   #cienPeliculas{
     font-size: smaller;
     width: 100vw;
+  }
+}
+@media (max-width:576px) {
+  .indexMain{
+    
+  }
+  #contenedorImagen{
+    top: 70%;
+    right: 20%;
+    width: 50%;
   }
 }
