@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('estrella4'),
         document.getElementById('estrella5')
     ];
-
     var count = document.getElementById('estrellas');
     var rating = parseInt(count.getAttribute('data-rating'));
 
@@ -14,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         estrellas1[i].setAttribute('src', 'img/estrella.png');
         estrellas1[i].setAttribute('class', 'estrellaGold');
     }
+    
 
     var pelicula = sessionStorage.getItem('pelicula');
     var titulo = document.getElementById('titulo');
@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var fecha = document.getElementById('fecha1');
     var director = document.getElementById('rojo');
     var video = document.getElementById('video');
+    
 
     switch (pelicula) {
         case '1':
@@ -30,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
             director.innerText = 'Tian Xiaopeng'
             video.setAttribute('src', 'https://www.youtube.com/embed/GlhWF_qDEUk?autoplay=1&mute=1')
             video.setAttribute('title', 'Deep Sea tráiler')
+            rating.setAttribute('data-rating', '4')
             break;
         case '2':
             titulo.innerText = 'Furiosa: de la saga Mad Max'
@@ -88,4 +90,5 @@ document.addEventListener("DOMContentLoaded", function () {
             video.setAttribute('title', 'Sangre en los labios tráiler')
             break;
     }
+    
 });
