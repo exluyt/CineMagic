@@ -61,6 +61,7 @@ nav {
     padding: 5vw;
     padding-bottom: 0;
     padding-top: 2vw;
+    align-items: center;
 }
 
 #video {
@@ -72,6 +73,7 @@ nav {
     text-align: left;
     margin-top: 0.5vw;
     display: inline-flex;
+    align-items: center;
 }
 
 #fechaP {
@@ -88,6 +90,7 @@ nav {
     margin-left: auto;
     font-size: 18px;
     animation: shadow 3s;
+    margin-bottom: 20%;
 }
 
 #informacion {
