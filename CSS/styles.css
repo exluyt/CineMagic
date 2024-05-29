@@ -11,11 +11,11 @@
 body {
   display: flex;
   flex-direction: column;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 300;
-	line-height: 1.7;
-	color: var(--color-rojo);
-	background-color: var(--color-rosa-claro);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--color-rojo);
+  background-color: var(--color-rosa-claro);
   width: 80vw;
   margin-left: 10vw;
   margin-right: 10vw;
@@ -135,6 +135,7 @@ h6 span {
   padding: 0.5rem;
   box-sizing: border-box;
 }
+
 .general {
   display: flex;
   justify-content: center;
@@ -244,7 +245,7 @@ h6 span {
 .boton:hover {
   background-color: #000000;
   color: var(--color-naranja);
-  box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
+  box-shadow: 0 8px 24px 0 rgba(16, 39, 112, .2);
 }
 
 a:hover {
@@ -259,15 +260,21 @@ a:hover {
   text-decoration: underline;
   color: var(--color-rojo);
 }
-#error{
-    visibility: hidden;
+
+#error {
+  visibility: hidden;
 }
 
 @media(max-width: 550px) {
-  #nombreLogo{
+  #nombreLogo {
     display: none;
-}
-  #palomitas{
+  }
+
+  .boton {
+    padding: 0 15px;
+  }
+
+  #palomitas {
     margin-left: 2rem;
   }
 }
