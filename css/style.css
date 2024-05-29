@@ -1,0 +1,170 @@
+
+.box {
+position: relative;
+width: 1273px;
+height: 122px;
+}
+
+.box .header {
+position: fixed;
+width: 1273px;
+height: 122px;
+top: 0;
+left: 0;
+background-color: transparent;
+}
+
+.box .overlap {
+position: absolute;
+width: 304px;
+height: 122px;
+top: 0;
+left: 0;
+}
+
+.box .logo {
+position: absolute;
+width: 108px;
+height: 122px;
+top: 0;
+left: 0;
+}
+
+.box .frame {
+position: relative;
+height: 122px;
+}
+
+.box .removal {
+width: 71px;
+height: 111px;
+top: 11px;
+left: 18px;
+position: absolute;
+object-fit: cover;
+}
+
+.box .img {
+width: 196px;
+height: 38px;
+top: 55px;
+left: 108px;
+position: absolute;
+object-fit: cover;
+}
+
+.box .overlap-group {
+position: absolute;
+width: 290px;
+height: 29px;
+top: 59px;
+left: 813px;
+}
+
+.box .menu {
+position: absolute;
+width: 290px;
+height: 29px;
+top: 0;
+left: 0;
+}
+
+.box .div {
+position: relative;
+height: 29px;
+}
+
+.box .text-wrapper {
+position: absolute;
+width: 83px;
+top: 0;
+left: 6px;
+font-family: "Plus Jakarta Sans-Medium", Helvetica;
+font-weight: 500;
+color: #18181b;
+font-size: 16px;
+text-align: right;
+letter-spacing: 0;
+line-height: 24px;
+white-space: nowrap;
+}
+
+.box .language {
+position: absolute;
+width: 24px;
+height: 24px;
+top: 2px;
+left: 0;
+}
+
+.box .text-wrapper-2 {
+position: absolute;
+width: 147px;
+top: 0;
+left: 141px;
+font-family: "Plus Jakarta Sans-Medium", Helvetica;
+font-weight: 500;
+color: #18181b;
+font-size: 16px;
+letter-spacing: 0;
+line-height: 24px;
+}
+
+.box .line {
+position: absolute;
+width: 2px;
+height: 20px;
+top: 5px;
+left: 122px;
+}
+
+.box .keyboard-arrow-down {
+position: absolute;
+width: 24px;
+height: 24px;
+top: 3px;
+left: 91px;
+}
+
+.box .button-primary-with {
+display: flex;
+flex-direction: column;
+width: 140px;
+height: 54px;
+align-items: center;
+justify-content: center;
+gap: 10px;
+padding: 16px;
+position: absolute;
+top: 46px;
+left: 1133px;
+border-radius: 10px;
+border: 3px solid;
+border-color: #927c72;
+}
+
+.box .frame-2 {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 9px;
+position: relative;
+flex: 0 0 auto;
+margin-top: -1px;
+margin-bottom: -1px;
+box-shadow: 0px 4px 4px #00000040;
+}
+
+.box .button-name {
+position: relative;
+width: fit-content;
+margin-top: -1px;
+font-family: "Plus Jakarta Sans-Medium", Helvetica;
+font-weight: 500;
+color: #18181b;
+font-size: 16px;
+text-align: right;
+letter-spacing: 0;
+line-height: 24px;
+white-space: nowrap;
+}
