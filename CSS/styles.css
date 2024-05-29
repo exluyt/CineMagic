@@ -265,7 +265,7 @@ a:hover {
   visibility: hidden;
 }
 
-@media(max-width: 550px) {
+@media(max-width: 368px) {
   #nombreLogo {
     display: none;
   }
@@ -275,6 +275,6 @@ a:hover {
   }
 
   #palomitas {
-    margin-left: 2rem;
+    margin-left: 110%;
   }
 }
