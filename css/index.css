@@ -70,7 +70,9 @@ nav {
 #resalte{
   font-weight: bold;
 }
-
+.click {
+  cursor: pointer;
+}
 @media (max-width:944px){
   #textoLogo{
     display: none;
