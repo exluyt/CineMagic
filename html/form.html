@@ -29,25 +29,28 @@
             </div>
         </nav>
     </header>
+    
         <main>
+            <!-- el contenedor del form para definir el background y no afectar a las dimensiones del form por el h1-->
             <section id="subContenedor">
                 <h1>Solicita tu pelicula</h1>
 
-                <form action="">
+                <form>
                     <input type="number" name="año" id="año"  placeholder="Año" max="9999">
                     <input type="email" name="email" id="email" placeholder="Correo electrónico">
                     <input type="text" name="pelicula" id="pelicula" placeholder="Nombre de la película">
                     <select name="idiomaPelicula" id="idiomaPelicula">  
                         <option value="">Idioma de la pelicula</option>
-                        <option value="">Alemán</option>
-                        <option value="">Chino</option>
-                        <option value="">Coreano</option>
-                        <option value="">Español</option>
-                        <option value="">Francés</option>
-                        <option value="">Inglés</option>
-                        <option value="">Japonés</option>
-                        <option value="">otro</option>
+                        <option value="Aleman">Alemán</option>
+                        <option value="Chino">Chino</option>
+                        <option value="Coreano">Coreano</option>
+                        <option value="Español">Español</option>
+                        <option value="Frances">Francés</option>
+                        <option value="Inglés">Inglés</option>
+                        <option value="Japonés">Japonés</option>
+                        <option value="Other">otro</option>
                     </select>
+                    <!-- conjunto de input label para facilitar la organizacion de las checkbox por el grid -->
                     <section id="labelOfertas">
                         <input class="cajas" id="ofertasCheckbox" type="checkbox" checked>
                         <label for="ofertasCheckbox" >Deseo recibir información sobre novedades y
@@ -63,9 +66,9 @@
                         <label for="declaracionCheckbox" >Declaro haber leído y acepto las condiciones
                             generales del programa y la normativa sobre protección de datos"</label>
                     </section>
-
                     <input type="submit" value="Enviar" id="enviar">
                     </form>
+                    <script src="../javaScript/form.js"></script>
             </section>
         </main>
 

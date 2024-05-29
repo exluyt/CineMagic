@@ -31,10 +31,12 @@ form{
     grid-gap: 10px;
     
 }
+
 #email{
     width: 100%;
     grid-row: 2;
 }
+/*los portatiles como vista predeterminada tienen el campo de año ubicado arriba a la derecha*/ 
 #año{
     width: 50%;
     grid-column: 2;
@@ -110,7 +112,7 @@ form section{
     background-color: unset;
     
 }
-
+/* Cambiar propiedades de los checkbox tras ser marcados (cambia el tick, los colores y la posicion del tick*/
 input[type="checkbox"]:checked::after {
     color: var(--color-marron);
     content: "X";
