@@ -226,6 +226,8 @@ nav.shrink {
 .nextPrevArrows {
     position: absolute;
     top: 80%;
+    margin-top: 15%;
+    margin-left: 10%;
     right: 52%;
     z-index: 100;
     width: 300px;
@@ -498,8 +500,68 @@ nav.shrink {
     transition: opacity 1s;
 }
 
-@media (min-width: 1300) {
+@media (max-width: 739px) {
+    #logo {
+        display: none;
+    }
+
+    .title {
+        font-size: 40px !important;
+    }
+
+    .type {
+        font-size: 40px !important;
+    }
+
+    .description {
+        font-size: 15px !important;
+    }
+
     .nextPrevArrows {
-        margin-top: 100;
+        margin-left: 40px !important;
+    }
+}
+
+@media (max-width: 513px) {
+    .description{
+        font-size: 12px !important;
+    }
+    .nextPrevArrows{
+        margin-top: 75px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    #logo {
+        display: none;
+    }
+
+    #palomitas {
+        width: 60%;
+        height: 60%;
+    }
+
+    .enlace {
+        margin-left: 2px;
+    }
+
+    .title {
+        font-size: 25px !important;
+    }
+
+    .type {
+        font-size: 25px !important;
+    }
+
+    .description {
+        font-size: 11px !important;
+    }
+
+    .thumbnail {
+        margin-left: 35px;
+    }
+
+    .nextPrevArrows {
+        margin-top: 30%;
     }
 }
