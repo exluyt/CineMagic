@@ -497,3 +497,9 @@ nav.shrink {
     opacity: 1;
     transition: opacity 1s;
 }
+
+@media (min-width: 1300) {
+    .nextPrevArrows {
+        margin-top: 100;
+    }
+}
