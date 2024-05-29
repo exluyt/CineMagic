@@ -256,7 +256,7 @@ a:hover {
 /**
 * al ser menor de 760 px de ancho se oculta el nombre del logo
 */
-@media(max-width: 760px) {
+@media(max-width: 550px) {
   #nombreLogo{
     display: none;
 }
