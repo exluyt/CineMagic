@@ -262,3 +262,12 @@ a:hover {
 #error{
     visibility: hidden;
 }
+
+@media(max-width: 550px) {
+  #nombreLogo{
+    display: none;
+}
+  #palomitas{
+    margin-left: 2rem;
+  }
+}
