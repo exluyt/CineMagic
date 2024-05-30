@@ -7,13 +7,13 @@
     <title>CineMagic</title>
     <link rel="shortcut icon" href="img/LogoPalomitas.png">
     <link rel="stylesheet" href="./CSS/menu.css">
+    <script src="JS/hamburguesa.js"></script>
 </head>
-
 <body>
     <header>
         <nav>
             <div id="icono">
-                <img src="./src/LogoPalomitas.png" alt="Logo" title="Cine Magic" width="70"  >
+                <img src="./src/LogoPalomitas.png" alt="Logo" title="Cine Magic" id="palomitas" width="70">
                 <img src="./src/CineMagicLogo.png" alt="Nombre" width="250"  id="textoLogo">
             </div>
             <div id="idiomas">
@@ -21,15 +21,23 @@
                     <p class="textoHeader">Solicitar película</p>
                 </a>
                 <p id="barraVertical">|</p>
-                <a class="enlace" href="InicioDeSesion.html">
-                    <p class="textoHeader">Inicia Sesion</p>
+                <a class="enlace" href="index.html">
+                    <p class="textoHeader">Cerrar sesión</p>
                 </a>
             </div>
+            <img src="src/menuHa.png" title="Menu" id="imgMenuH" alt="Menu Desplegable">
+            <div id="menuH">
+                <ul>
+                    <li><a href="form.html">Solicitar película</a></li>
+                    <hr>
+                    <li><a href="index.html">Cerrar sesión</a></li>
+                </ul>
+            </div>
+
         </nav>
     </header>
-
-    <body>
-        <main class="slider">
+    
+    <main class="slider">
 
 
             <section class="list">
