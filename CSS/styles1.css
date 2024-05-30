@@ -61,6 +61,7 @@ nav {
     padding: 5vw;
     padding-bottom: 0;
     padding-top: 2vw;
+    align-items: center;
 }
 
 #video {
@@ -72,6 +73,7 @@ nav {
     text-align: left;
     margin-top: 0.5vw;
     display: inline-flex;
+    align-items: center;
 }
 
 #fechaP {
@@ -88,6 +90,7 @@ nav {
     margin-left: auto;
     font-size: 18px;
     animation: shadow 3s;
+    margin-bottom: 20%;
 }
 
 #informacion {
@@ -135,51 +138,55 @@ nav {
     overflow: hidden;
 }
 
-#direccion{
+#direccion {
     display: flex;
     align-items: center;
 }
 
 @media(max-width: 1000px) {
-    main{
-        display: block;
-    }
-    #caja1{
+    main {
         display: block;
     }
 
-    #video{
+    #caja1 {
+        display: block;
+    }
+
+    #video {
         display: block;
         width: 80%;
         margin-left: 10%;
     }
 }
 
-@media(max-width: 760px){
-    #video, #director, #nombreLogo{
+@media(max-width: 760px) {
+
+    #video,
+    #director,
+    #nombreLogo {
         display: none;
     }
 
-    #informacion{
+    #informacion {
         display: block;
     }
 
-    #direccion{
+    #direccion {
         margin-top: 2.8vw;
         align-items: center;
         justify-content: center;
     }
 
-    #valoracion{
+    #valoracion {
         display: block;
         text-align: center;
     }
 
-    #icono{
+    #icono {
         margin-left: 5%;
     }
 
-    #idiomas{
+    #idiomas {
         margin-right: 5%;
     }
 }
@@ -205,12 +212,14 @@ nav {
 }
 
 @keyframes desplazamientoIzquierda {
-    from{
-      left: -50%;
-      opacity: 10%;
-    }to{
-      
-      left: 0;
-      opacity: 100%;
+    from {
+        left: -50%;
+        opacity: 10%;
     }
-  }
+
+    to {
+
+        left: 0;
+        opacity: 100%;
+    }
+}

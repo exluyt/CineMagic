@@ -6,14 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('estrella4'),
         document.getElementById('estrella5')
     ];
-    var count = document.getElementById('estrellas');
-    var rating = parseInt(count.getAttribute('data-rating'));
 
-    for (let i = 0; i < rating; i++) {
-        estrellas1[i].setAttribute('src', 'img/estrella.png');
-        estrellas1[i].setAttribute('class', 'estrellaGold');
-    }
-    
+    var count = document.getElementById('estrellas');
 
     var pelicula = sessionStorage.getItem('pelicula');
     var titulo = document.getElementById('titulo');
@@ -21,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var fecha = document.getElementById('fecha1');
     var director = document.getElementById('rojo');
     var video = document.getElementById('video');
-    
+
 
     switch (pelicula) {
         case '1':
@@ -31,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
             director.innerText = 'Tian Xiaopeng'
             video.setAttribute('src', 'https://www.youtube.com/embed/GlhWF_qDEUk?autoplay=1&mute=1')
             video.setAttribute('title', 'Deep Sea tráiler')
-            rating.setAttribute('data-rating', '4')
+            count.setAttribute('data-rating', '4')
             break;
         case '2':
             titulo.innerText = 'Furiosa: de la saga Mad Max'
@@ -40,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
             director.innerText = 'George Miller'
             video.setAttribute('src', 'https://www.youtube.com/embed/S3Vx7TZ0yZw?autoplay=1&mute=1')
             video.setAttribute('title', 'Furiosa: de la saga Mad Max tráiler')
+            count.setAttribute('data-rating', '4')
             break;
         case '3':
             titulo.innerText = 'Caída libre'
@@ -48,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
             director.innerText = 'Laura Jou'
             video.setAttribute('src', 'https://www.youtube.com/embed/AhrOksKAxxY?autoplay=1&mute=1')
             video.setAttribute('title', 'Caída libre tráiler')
+            count.setAttribute('data-rating', '3')
             break;
         case '4':
             titulo.innerText = 'Nina'
@@ -56,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
             director.innerText = 'Andrea Jaurrieta'
             video.setAttribute('src', 'https://www.youtube.com/embed/lNuvk8UzbgA?autoplay=1&mute=1')
             video.setAttribute('title', 'Nina tráiler')
+            count.setAttribute('data-rating', '3')
             break;
         case '5':
             titulo.innerText = 'Immaculate'
@@ -64,6 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
             director.innerText = 'Michael Mohan'
             video.setAttribute('src', 'https://www.youtube.com/embed/lywekKHvLjo?autoplay=1&mute=1')
             video.setAttribute('title', 'Immaculate tráiler')
+            count.setAttribute('data-rating', '2')
             break;
         case '6':
             titulo.innerText = 'Rivales'
@@ -72,6 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
             director.innerText = ' Luca Guadagnino'
             video.setAttribute('src', 'https://www.youtube.com/embed/2_ojxFOrAgQ?autoplay=1&mute=1')
             video.setAttribute('title', 'Rivales tráiler')
+            count.setAttribute('data-rating', '3')
             break;
         case '7':
             titulo.innerText = 'Abigail'
@@ -80,6 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
             director.innerText = 'Matt Bettinelli-Olpin, Tyler Gillett'
             video.setAttribute('src', 'https://www.youtube.com/embed/SoLCxyHpstY?autoplay=1&mute=1')
             video.setAttribute('title', 'Abigail tráiler')
+            count.setAttribute('data-rating', '3')
             break;
         case '8':
             titulo.innerText = 'Sangre en los labios'
@@ -88,7 +88,14 @@ document.addEventListener("DOMContentLoaded", function () {
             director.innerText = 'Rose Glass'
             video.setAttribute('src', 'https://www.youtube.com/embed/S_ZuMAC6s8U?autoplay=1&mute=1')
             video.setAttribute('title', 'Sangre en los labios tráiler')
+            count.setAttribute('data-rating', '3')
             break;
     }
-    
+
+    var rating = parseInt(count.getAttribute('data-rating'));
+
+    for (let i = 0; i < rating; i++) {
+        estrellas1[i].setAttribute('src', 'img/estrella.png');
+        estrellas1[i].setAttribute('class', 'estrellaGold');
+    }
 });
